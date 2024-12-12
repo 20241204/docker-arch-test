@@ -1,0 +1,9 @@
+services:
+  arch-app:
+    build:
+      context: .
+    platform: linux/arm64/v8
+    image: ghcr.io/20241204/docker-arch-test:latest
+    command:
+      - "/bin/ash"
+      - "/app/arch-test.sh"
